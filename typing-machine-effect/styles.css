@@ -1,0 +1,35 @@
+/*Animations*/
+@keyframes cursor {
+  to {border-right: none;}
+}
+@keyframes typing {
+  from {width: 0;}
+  to {width: 100%;}
+}
+
+/*Classe com a animação*/
+.typing-machine-effect {
+  animation: cursor 600ms linear infinite, typing 3s steps(15) 1s;
+}
+
+body {
+  font-family: 'Roboto Flex', sans-serif;
+  margin: 0;
+  height: 90vh;
+  width: 90vw;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  top: 10%;
+  left: 10%;
+  width: max-content;
+}
+
+.container h2 {
+  border-right: solid 2px black;
+  font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+}
